@@ -8,7 +8,7 @@ function MenuItem() {
     const menuItemImage = new URL(`../assets/img/menu_items/${item.title}.jpg`, import.meta.url).href;
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/restaurant/menu/items/${itemId}`)
+        axios.get(`https://littlelemonapi.pythonanywhere.com/restaurant/menu/items/${itemId}`)
             .then((response) => setItem(response.data))
             .catch((error) => console.error(error));
     }, []);

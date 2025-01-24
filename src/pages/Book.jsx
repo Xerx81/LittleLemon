@@ -18,7 +18,7 @@ function Book() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://127.0.0.1:8000/restaurant/booking/tables/', formData);
+            const response = await axios.post('https://littlelemonapi.pythonanywhere.com/restaurant/booking/tables/', formData);
             console.log("Booking created:", response.data);
             alert("Booking Successful!");
             setFormData({

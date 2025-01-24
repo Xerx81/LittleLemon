@@ -6,7 +6,7 @@ function Menu() {
     const [menuItems, setMenuItems] = useState([]);
     
     useEffect(() => {
-        axios.get("http://127.0.0.1:8000/restaurant/menu/items/")
+        axios.get("https://littlelemonapi.pythonanywhere.com/restaurant/menu/items/")
             .then((response) => setMenuItems(response.data))
             .catch((error) => console.error(error));
     }, []);
