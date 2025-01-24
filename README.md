@@ -9,8 +9,6 @@ This is the frontend for the Little Lemon web application, built using React and
 - [Folder Structure](#folder-structure)
 - [Scripts](#scripts)
 - [API Integration](#api-integration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
