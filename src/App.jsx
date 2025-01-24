@@ -9,7 +9,7 @@ import Header from "./components/Header";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/LittleLemon">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
