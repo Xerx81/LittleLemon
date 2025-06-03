@@ -1,4 +1,4 @@
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import About from './pages/About';
 import Book from './pages/Book';
 import Menu from './pages/Menu';
@@ -11,11 +11,13 @@ function App() {
     return (
         <HashRouter>
             <Header />
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/book" element={<Book />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/menu/:itemId" element={<MenuItem />} />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/book" element={<Book />} />
+                <Route path="/menu" element={<Menu />} />
+                <Route path="/menu/:itemId" element={<MenuItem />} />
+            </Routes>
             <Footer />
         </HashRouter>
     );
