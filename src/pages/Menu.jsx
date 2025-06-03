@@ -7,11 +7,11 @@ function Menu() {
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
-        setLoading = true;
+        setLoading(true);
         axios.get("https://littlelemonapi.pythonanywhere.com/restaurant/menu/items/")
             .then((response) => setMenuItems(response.data))
             .catch((error) => console.error(error));
-        setLoading = false;
+        setLoading(false);
     }, []);
 
     if (loading) {
